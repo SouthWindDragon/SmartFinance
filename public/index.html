@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartFinance</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>SmartFinance</h1>
+    <p>Seu controle financeiro inteligente</p>
+</header>
+
+<main>
+
+<section class="card">
+    <h2>Cadastro</h2>
+
+    <input type="text" id="name" placeholder="Nome">
+    <input type="email" id="email" placeholder="Email">
+    <input type="password" id="password" placeholder="Senha">
+
+    <button onclick="register()">Cadastrar</button>
+</section>
+
+<section class="card">
+    <h2>Login</h2>
+
+    <input type="email" id="loginEmail" placeholder="Email">
+    <input type="password" id="loginPassword" placeholder="Senha">
+
+    <button onclick="login()">Entrar</button>
+</section>
+
+<section class="card">
+    <h2>Adicionar Transação</h2>
+
+    <select id="type">
+        <option value="Receita">Receita</option>
+        <option value="Despesa">Despesa</option>
+    </select>
+
+    <input type="text" id="description" placeholder="Descrição">
+    <input type="number" id="amount" placeholder="Valor">
+
+    <button onclick="addTransaction()">Salvar</button>
+</section>
+
+<section class="card">
+    <h2>Histórico Financeiro</h2>
+
+    <div id="transactions"></div>
+</section>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>
